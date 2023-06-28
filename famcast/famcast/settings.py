@@ -57,7 +57,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
-    # 'stations.middleware.ApiKeyMiddleware',
+    'stations.middleware.ApiKeyMiddleware',
 
 ]
 CSRF_TRUSTED_ORIGINS = [
