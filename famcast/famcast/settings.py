@@ -32,7 +32,7 @@ SECRET_KEY = env("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['sv4.famcast.co.za']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -61,8 +61,7 @@ MIDDLEWARE = [
 
 ]
 CSRF_TRUSTED_ORIGINS = [
-    'https://sv4.famcast.co.za',
-    'https://www.sv4.famcast.co.za',
+
 ]
 
 
