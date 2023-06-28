@@ -51,7 +51,7 @@ def trusted_origin_required(view_func):
 
 @api_view(['POST'])
 @api_key_required
-# @trusted_origin_required
+@trusted_origin_required
 def create_station(request):
     serializer = StationSerializer(data=request.data)
 
@@ -63,7 +63,7 @@ def create_station(request):
 
 @api_view(['PUT'])
 @api_key_required
-# @trusted_origin_required
+@trusted_origin_required
 def update_station(request, station_id):
     try:
         station = Station.objects.get(id=station_id)
@@ -85,7 +85,7 @@ def update_station(request, station_id):
 
 @api_view(['DELETE'])
 @api_key_required
-# @trusted_origin_required
+@trusted_origin_required
 def delete_station(request, station_id):
 
     try:
@@ -106,7 +106,7 @@ def delete_station(request, station_id):
 
 @api_view(['GET'])
 @api_key_required
-# @trusted_origin_required
+@trusted_origin_required
 def get_station(request, station_id):
     try:
         station = Station.objects.get(id=station_id)
